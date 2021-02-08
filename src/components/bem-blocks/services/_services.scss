@@ -1,0 +1,86 @@
+.services {
+    padding-bottom: 5.5rem;
+    background: url(../img/bg-services.webp);
+    background-repeat: no-repeat;
+
+    /* .services__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 11.6rem;
+    }
+
+    /* .services__wrepper */
+
+    &__wrepper {
+        flex-wrap: wrap;
+        gap: 6.1rem;
+        align-items: stretch;
+    }
+
+    /* .services__item */
+
+    &__item {
+        max-width: 31.5rem;
+        background-color: #fff;
+        box-shadow: 0px 9px 11.18px 1.82px rgba(186, 185, 185, 0.23);
+        border-radius: 1.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3.4rem;
+    }
+
+    /* .services__box-img */
+
+    &__box-img {
+        position: relative;
+        height: 23.1rem;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        margin-bottom: 1.6rem;
+    }
+
+    /* .services__img-text */
+
+    &__img-text {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(#fff, 0.8);
+        left: 0;
+        font-family: "TrajanPro3";
+        font-weight: 400;
+        line-height: 4.1rem;
+    }
+
+    /* .services__info-price */
+
+    &__info-price {
+        background-color: rgb(245, 203, 115);
+        border-radius: 1.2rem;
+        padding: 1rem;
+        max-width: 9.6rem;
+        margin: 0 auto;
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+
+    /* .services__info-text */
+
+    &__info-text {
+        font-size: 1.4rem;
+        max-width: 20rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    /* .services__info-btn */
+
+    &__info-btn {
+        max-width: 13.4rem;
+        height: 4.8rem;
+        font-size: 1.1rem;
+        margin-top: auto;
+    }
+}

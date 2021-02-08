@@ -8,6 +8,7 @@
 		"@babel/preset-env": "^7.12.11",
 		"browser-sync": "^2.26.13",
 		"fs": "^0.0.1-security",
+		"fslightbox": "^3.2.3",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^7.0.1",
 		"gulp-babel": "^8.0.0",
@@ -35,7 +36,8 @@
 		"vinyl-ftp": "^0.6.1"
 	},
 	"dependencies": {
-		"normalize.css": "^8.0.1"
+		"normalize.css": "^8.0.1",
+		"swiper": "^6.4.11"
 	},
 	"scripts": {
 		"html": "gulp",

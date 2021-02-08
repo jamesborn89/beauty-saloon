@@ -7,18 +7,24 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html,
 body {
     height: 100%;
-    position: relative;
+    // position: relative;
 }
 
 body {
     font-size: 1.8rem;
-	color: $black;
+    color: $black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 ul,
@@ -37,6 +43,7 @@ h6 {
 h1,
 h2 {
     font-family: "TrajanPro3";
+    font-weight: 400;
 }
 
 button:focus,
@@ -56,9 +63,61 @@ button {
 
 a {
     color: inherit;
-	text-decoration: none;
-	transition: all 0.3s;
-	outline: transparent;
+    text-decoration: none;
+    transition: all 0.3s;
+    outline: transparent;
+}
+
+.gold {
+    color: $accent;
+}
+
+.btn {
+    font-family: 'Montserrat';
+    background-image: linear-gradient(0deg, rgb(227, 152, 20) 0%, rgb(255, 231, 167) 100%);
+    border-radius: 1.8rem;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 18px 11px -11px rgba(241, 166, 33, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0.01rem;
+        height: 15rem;
+        top: 50%;
+        transform: translateY(-50%) rotate(-40deg);
+        background-color: #fff;
+        left: -6rem;
+        box-shadow: 0 0 20px 15px rgba(255, 255, 255, 1);
+        animation: btn 3s 2s infinite;
+        opacity: 0.7;
+    }
+
+    &:hover,
+    &:focus-visible {
+        box-shadow: 0 25px 11px -11px rgba(241, 166, 33, 0.7);
+        background-image: linear-gradient(0deg, rgb(227,152,20) 0%, rgb(255,240,200) 100%);          
+    }
+}
+
+@keyframes btn {
+    80% {
+        left: -6rem;
+    }
+    100% {
+        left: 120%;
+    }
+}
+
+.title {
+    font-size: 3.6rem;
 }
 
 .flex {

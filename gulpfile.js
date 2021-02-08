@@ -31,8 +31,12 @@ const {
 	strict
 } = require('assert');
 
-const js_plugins = [];
+const js_plugins = [
+	'node_modules/swiper/swiper-bundle.min.js',
+	'node_modules/fslightbox/index.js'
+];
 const css_plugins = [
+	'node_modules/swiper/swiper-bundle.min.css',
 	'node_modules/normalize.css/normalize.css'
 ];
 
