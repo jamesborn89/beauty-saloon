@@ -41,27 +41,27 @@
 
     &__modal {
         width: 100%;
-        height: 100%;
-    }
-
-    /* .atmosphere__item */
-
-    &__item {
         max-width: 52rem;
         height: 36.5rem;
-        border-radius: 1.5rem;
+        display: block;
         overflow: hidden;
+        border-radius: 1.5rem;
         border: 0.3rem solid transparent;
         transition: all 0.24s;
         
-        &:hover {
+        &:hover,
+        &:focus-visible {
             border: 0.3rem solid $accent;
-
-            
+    
             .atmosphere__img {
                 transform: scale(1.1);
             }
         }
+    }
+    
+    /* .atmosphere__item */
+    
+    &__item {
     }
 
     /* .atmosphere__min-item */
