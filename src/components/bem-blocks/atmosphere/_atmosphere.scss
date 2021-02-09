@@ -37,6 +37,13 @@
         z-index: 2;
     }
 
+    /* .atmosphere__modal */
+
+    &__modal {
+        width: 100%;
+        height: 100%;
+    }
+
     /* .atmosphere__item */
 
     &__item {
@@ -44,6 +51,17 @@
         height: 36.5rem;
         border-radius: 1.5rem;
         overflow: hidden;
+        border: 0.3rem solid transparent;
+        transition: all 0.24s;
+        
+        &:hover {
+            border: 0.3rem solid $accent;
+
+            
+            .atmosphere__img {
+                transform: scale(1.1);
+            }
+        }
     }
 
     /* .atmosphere__min-item */
@@ -54,20 +72,12 @@
         height: 9rem;
         border-radius: 1.5rem;
         overflow: hidden;
+        cursor: pointer;
     }
 
     /* .atmosphere__img */
 
     &__img {
-    }
-
-    /* .atmosphere__next */
-
-    &__next {
-    }
-
-    /* .atmosphere__prew */
-
-    &__prew {
+        transition: transform 2s;
     }
 }

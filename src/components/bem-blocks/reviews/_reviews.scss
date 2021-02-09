@@ -1,0 +1,20 @@
+.reviews {
+    background: url(../img/bg-reviews.webp) no-repeat;
+    background-size: cover;
+    padding-top: 6.5rem;
+    padding-bottom: 9rem;
+
+    /* .reviews__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 6.5rem;
+    }
+
+    /* .reviews__item */
+
+    &__item {
+        max-width: 33rem;
+        height: 67rem;
+    }
+}

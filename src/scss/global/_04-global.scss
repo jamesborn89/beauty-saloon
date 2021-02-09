@@ -57,7 +57,7 @@ button {
 
 .container {
     max-width: 120rem;
-    padding: 0 1.5rem;
+    padding: 0 1.7rem;
     margin: 0 auto;
 }
 
@@ -66,6 +66,10 @@ a {
     text-decoration: none;
     transition: all 0.3s;
     outline: transparent;
+}
+
+.fslightbox-open {
+    padding-right: 1.7rem;
 }
 
 .gold {
