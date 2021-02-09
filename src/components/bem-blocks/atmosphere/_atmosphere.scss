@@ -15,11 +15,25 @@
     &__wrapper {
         max-width: 108rem;
         position: relative;
+        margin: 0 auto;
+
+        .swiper-navigation .atmosphere__next,
+         .swiper-navigation .atmosphere__prew, {
+             top: 35%;
+         }
     }
     
     /* .atmosphere__slider */
     
     &__slider {
+        z-index: 2;
+        margin-bottom: 1.5rem;
+    }
+
+    /* .atmosphere__min-slider */
+    
+    &__min-slider {
+        max-width: 68rem;
         z-index: 2;
     }
 
@@ -28,6 +42,16 @@
     &__item {
         max-width: 52rem;
         height: 36.5rem;
+        border-radius: 1.5rem;
+        overflow: hidden;
+    }
+
+    /* .atmosphere__min-item */
+
+    &__min-item {
+        width: 100%;
+        max-width: 14rem;
+        height: 9rem;
         border-radius: 1.5rem;
         overflow: hidden;
     }
