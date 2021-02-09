@@ -1,0 +1,101 @@
+.form {
+    background: url(../img/bg-form.webp) no-repeat;
+    background-size: cover;
+    padding-top: 6.5rem;
+    padding-bottom: 14rem;
+
+    /* .form__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+
+    /* .form__subtitle */
+
+    &__subtitle {
+        text-align: center;
+        max-width: 49rem;
+        margin: 0 auto 7.5rem;
+    }
+
+    /* .form__box-form */
+
+    &__box-form {
+        flex-wrap: wrap;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    /* .form__input-tel */
+
+    &__input-tel {
+        width: 100%;
+        max-width: 35rem;
+        height: 10rem;
+        text-align: center;
+        margin: 0 1.5rem;
+        background-color: transparent;
+        border: 0.1rem solid rgb(192, 191, 191);
+        border-radius: 1.8rem;
+        font-size: 2.4rem;
+        padding: 1rem;
+    }
+
+    /* .form__btn */
+
+    &__btn {
+        max-width: 35rem;
+        height: 10rem;
+        margin: 0 1.5rem;
+    }
+
+    /* .form__checkbox */
+
+    &__checkbox {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        clip: rect(0 0 0 0);
+        left: 0.7rem;
+        bottom: 0;
+
+        &:checked+.form__checkbox-style {
+            background-color: $accent;
+        }
+    }
+
+
+    &__checkbox-style {
+        border: 0.1rem solid rgb(192, 191, 191);
+        border-radius: 0.5rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        display: inline-block;
+        margin-right: 0.8rem;
+        position: absolute;
+        left: 0;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+
+    /* .form__lable */
+
+    &__lable {
+        position: relative;
+        cursor: pointer;
+        width: auto;
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 1.1rem;
+        padding-left: 2.3rem;
+    }
+
+    /* .form__lable-link */
+
+    &__lable-link {
+        text-decoration: underline;
+        font-family: "Monserrat";
+    }
+}
