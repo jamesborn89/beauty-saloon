@@ -1,0 +1,98 @@
+.master {
+    background: url(../img/bg-master.webp) no-repeat;
+    background-size: cover;
+    padding-top: 12.5rem;
+    padding-bottom: 7rem;
+    
+    &__wrapper {
+        position: relative;
+        max-width: 101.7rem;
+        margin: 0 auto;
+    }
+
+    /* .master__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    /* .master__slider */
+
+    &__slider {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow( 0 7px 7px rgba(0, 0, 0, 0.3));
+        z-index: 2;
+        position: relative;
+        padding-bottom: 5rem;
+
+        .swiper-pagination-bullets .swiper-pagination-bullet {
+            margin: 0 0.5rem;
+        }
+    }
+    
+    /* .master__item */
+    
+    &__item {
+        max-width: 31.4rem;
+        border-radius: 1.5rem;
+        background-color: #fff;
+        padding: 2.5rem;
+        padding-top: 0;      
+    }
+
+    /* .master__box-img */
+
+    &__box-img {
+        height: 24.2rem;
+        max-width: 24.2rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    /* .master__img */
+
+    &__img {}
+
+    /* .master__item-name */
+
+    &__item-name {
+        font-family: "TrajanPro3";
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    /* .master__item-position */
+
+    &__item-position {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    /* .master__item-btn */
+
+    &__item-btn {
+        max-width: 13.5rem;
+        height: 4rem;
+        font-size: 1.1rem;
+    }
+}
+
+.container {}
+
+.title {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.btn {}
+
+.swiper-pagination {}
+
+.swiper-button-next {}
+
+.swiper-button-prev {}

@@ -2,169 +2,334 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="beauty-saloon">
-    <meta name="keywords" content="Webdev, Gulp4, html, css, js, jquery">
-    <link rel="shortcut icon" href="img/favicon.ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Beauty saloon</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="beauty-saloon">
+	<meta name="keywords" content="Webdev, Gulp4, html, css, js, jquery">
+	<link rel="shortcut icon" href="img/favicon.ico.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Beauty saloon</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper flex --just-space --align-center">
-                <div class="header__box-logo">
-                    <a href="#" class="header__logo">BONBINO</a>
-                </div>
-                <nav class="header__nav">
-                    <ul class="header__nav-list reset flex">
-                        <li class="header__nav-item"><a href="#" class="header__nav-link active">Главная</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Услуги</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Мастера</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Портфолио</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header__box-phone">
-                    <a href="tel:78765655487" class="header__phone --svg__icon-phone-before">+7 (876) 565-54-87</a>
-                    <span class="header__schedule">Пн-Пт 9:00-21:00</span>
-                </div>
+	<header class="header">
+    <div class="container">
+        <div class="header__wrapper flex --just-space --align-center">
+            <div class="header__box-logo">
+                <a href="#" class="header__logo">BONBINO</a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list reset flex">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link active">Главная</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Услуги</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Мастера</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Портфолио</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__box-phone">
+                <a href="tel:78765655487" class="header__phone --svg__icon-phone-before">+7 (876) 565-54-87</a>
+                <span class="header__schedule">Пн-Пт 9:00-21:00</span>
             </div>
         </div>
-    </header>
-    <main class="main">
-        <section class="home">
-            <div class="home__slider swiper-container">
-                <div class="swiper-wrapper">
+    </div>
+</header>
+	<main class="main">
+		<section class="home">
+    <div class="home__slider swiper-container">
+        <div class="swiper-wrapper">
 
-                    <div class="home__item-one swiper-slide">
-                        <div class="container">
-                            <div class="home__wrapper flex">
-                                <div class="home__box-info">
-                                    <a href="#" class="home__adress --svg__map-before">г. Москва, ул. Березинская,
-                                        34</a>
-                                    <h1 class="home__title">
-                                        САЛОН <span class="gold">КРАСОТЫ</span> ПРЕМИУМ КЛАССА
-                                    </h1>
-                                    <p class="home__subtitle">Неповторимая атмосфера салона с лучшими мастерами
-                                        позволяет получить наслождение от процедур</p>
-                                    <a href="#" class="home__btn btn">Записаться онлайн</a>
-                                </div>
-                                <div class="home__box-img">
-                                    <img src="img/home-women.webp" alt="Девушка">
-                                </div>
-                            </div>
+            <div class="home__item-one swiper-slide">
+                <div class="container">
+                    <div class="home__wrapper flex">
+                        <div class="home__box-info">
+                            <a href="#" class="home__adress --svg__map-before">г. Москва, ул. Березинская, 34</a>
+                            <h1 class="home__title">
+                                САЛОН <span class="gold">КРАСОТЫ</span> ПРЕМИУМ КЛАССА
+                            </h1>
+                            <p class="home__subtitle">Неповторимая атмосфера салона с лучшими мастерами позволяет получить наслождение от процедур</p>
+                            <a href="#" class="home__btn btn">Записаться онлайн</a>
+                        </div>
+                        <div class="home__box-img">
+                            <img src="img/home-women.webp" alt="Девушка">
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="home__item-two swiper-slide">
-                        <div class="container">
-                            <div class="home__wrapper flex">
-                                <div class="home__box-info">
-                                    <h2 class="home__title-two">Скидка <span class="gold">-30%</span> на макияж</h2>
-                                    <span class="home__procent">%</span>
-                                    <a href="#" class="home__btn btn">Записаться</a>
-                                </div>
-                                <div class="home__box-img">
-                                    <img src="img/home-women-two.webp" alt="Девушка">
-                                </div>
-                            </div>
+            <div class="home__item-two swiper-slide">
+                <div class="container">
+                    <div class="home__wrapper flex">
+                        <div class="home__box-info">
+                            <h2 class="home__title-two">Скидка <span class="gold">-30%</span> на макияж</h2>
+                            <span class="home__procent">%</span>
+                            <a href="#" class="home__btn btn">Записаться</a>
                         </div>
+                        <div class="home__box-img">
+                            <img src="img/home-women-two.webp" alt="Девушка">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+		<section class="services">
+    <div class="container">
+        <h2 class="services__title title">
+            наши
+            <span class="gold">услуги</span>
+        </h2>
+
+        <div class="services__wrepper flex --just-space">
+
+            <div class="services__item">
+                <div class="services__box-img">
+                    <img src="img/services-item-1.webp" alt="Парикмахерские" class="services__img">
+                    <span class="services__img-text">Парикмахерские</span>
+                </div>
+                <div class="services__info-price">от 800 р</div>
+                <div class="services__info-text">Стрижка, укладка, окрашивание organic, лечебные процедуры,
+                    выпрямление </div>
+                <a class="services__info-btn btn" href="#">Подробнее</a>
+            </div>
+
+            <div class="services__item">
+                <div class="services__box-img">
+                    <img src="img/services-item-2.webp" alt="Ногтевой сервис" class="services__img">
+                    <span class="services__img-text">Ногтевой сервис</span>
+                </div>
+                <div class="services__info-price">от 500 р</div>
+                <div class="services__info-text">Маникюр, педикюр, уходы, коррекция ногтей, покрытие,
+                    дизайн, снятие, удаление </div>
+                <a class="services__info-btn btn" href="#">Подробнее</a>
+            </div>
+
+            <div class="services__item">
+                <div class="services__box-img">
+                    <img src="img/services-item-3.webp" alt="Косметология" class="services__img">
+                    <span class="services__img-text">Косметология</span>
+                </div>
+                <div class="services__info-price">от 800 р</div>
+                <div class="services__info-text">Инъекционная косметология,
+                    аппаратная косметология, уходы,
+                    пиллинги, чистки, массаж </div>
+                <a class="services__info-btn btn" href="#">Подробнее</a>
+            </div>
+
+            <div class="services__item">
+                <div class="services__box-img">
+                    <img src="img/services-item-4.webp" alt="Наращивание" class="services__img">
+                    <span class="services__img-text">Наращивание</span>
+                </div>
+                <div class="services__info-price">от 800 р</div>
+                <div class="services__info-text">Окрашивание, коррекция бровей,
+                    снятие нарощенных ресниц </div>
+                <a class="services__info-btn btn" href="#">Подробнее</a>
+            </div>
+
+            <div class="services__item">
+                <div class="services__box-img">
+                    <img src="img/services-item-5.webp" alt="Визаж" class="services__img">
+                    <span class="services__img-text">Визаж</span>
+                </div>
+                <div class="services__info-price">от 800 р</div>
+                <div class="services__info-text">Окрашивание, коррекция бровей,
+                    снятие нарощенных ресниц </div>
+                <a class="services__info-btn btn" href="#">Подробнее</a>
+            </div>
+
+            <div class="services__item">
+                <div class="services__box-img">
+                    <img src="img/services-item-6.webp" alt="Эпиляция" class="services__img">
+                    <span class="services__img-text">Эпиляция</span>
+                </div>
+                <div class="services__info-price">от 1000 р</div>
+                <div class="services__info-text">Лицо, бикини, руки, ноги,
+                    торс </div>
+                <a class="services__info-btn btn" href="#">Подробнее</a>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+		<section class="choose-us">
+    <div class="container">
+        <div class="choose-us__wrapper flex --just-space">
+            <div class="choose-us__box-info">
+                <h2 class="choose-us__title title">
+                    Почему <span class="gold">выбирают</span> нас
+                </h2>
+                <p class="choose-us__text">Красота меняет настроение! Привлекательная внешность не только вызывает
+                    рассположение окружающих, но и поднимает самооценку человека и придает ему уверенность в себе.
+                    Поэтому самый лучший способ улучшить настроение, почувствовать себя настоящей женщиной — это
+                    оказаться в красивой и теплой атмосфере нашей «BONBINO», выпить чашечку ароматного кофе и доверить
+                    себя профессиональным рукам специалистов салона.</p>
+            </div>
+            <div class="choose-us__box-img">
+                <img class="choose-us__img" src="img/choose-us-women.webp" alt="Девушка">
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="master">
+    <div class="container">
+        <div class="master__wrapper">
+            <h2 class="master__title title"><span class="gold">Мастера </span>салона</h2>
+            <div class="master__slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-1.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Мишина Ксения</div>
+                        <div class="master__item-position">Стилист</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-2.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Майкова Мария</div>
+                        <div class="master__item-position">Стилист</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-3.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Мишина Ксения</div>
+                        <div class="master__item-position">Стилист</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-1.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Мишина Ксения</div>
+                        <div class="master__item-position">Стилист</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-4.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Кирова Нина</div>
+                        <div class="master__item-position">Мастер макикюра/педикюра</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-5.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Костюк Ирина</div>
+                        <div class="master__item-position">Мастер макикюра/педикюра</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-6.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Гаврилюк Анна</div>
+                        <div class="master__item-position">Мастер макикюра/педикюра</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-7.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Лазарева Кристина</div>
+                        <div class="master__item-position">Врач-косметолог</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-8.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Аксенова Людмила</div>
+                        <div class="master__item-position">Мастер по наращиванию</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-9.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Василенко Милана</div>
+                        <div class="master__item-position">Мастер по наращиванию</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-10.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Бондоренко Наталья</div>
+                        <div class="master__item-position">Визажист</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="master__item swiper-slide">
+                        <div class="master__box-img">
+                            <img src="img/master-item-11.webp" alt="Мастер" class="master__img">
+                        </div>
+                        <div class="master__item-name">Литва Анастасия</div>
+                        <div class="master__item-position">Мастер эпиляции</div>
+                        <a class="master__item-btn btn" href="#">Узнать больше</a>
                     </div>
 
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </section>
-        <section class="services">
-            <div class="container">
-                <h2 class="services__title title">
-                    наши
-                    <span class="gold">услуги</span>
-                </h2>
+            <div class="swiper-navigation">
+                <div id="swiperNext" class="swiper-button-next"></div>
+                <div id="swiperPrev" class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="atmosphere">
+    <div class="container">
+        <h2 class="atmosphere__title title">Атмосфера <span class="gold">нашего</span> салона
+        </h2>
 
-                <div class="services__wrepper flex --just-space">
+        <div class="atmosphere__wrapper">
 
-                    <div class="services__item">
-                        <div class="services__box-img">
-                            <img src="img/services-item-1.webp" alt="Парикмахерские" class="services__img">
-                            <span class="services__img-text">Парикмахерские</span>
-                        </div>
-                        <div class="services__info-price">от 800 р</div>
-                        <div class="services__info-text">Стрижка, укладка, окрашивание organic, лечебные процедуры,
-                            выпрямление </div>
-                        <a class="services__info-btn btn" href="#">Подробнее</a>
+            <div class="atmosphere__slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="atmosphere__item swiper-slide">
+                        <img class="atmosphere__img" src="img/atmosphere-1.webp" alt="Интерьер">
                     </div>
-
-                    <div class="services__item">
-                        <div class="services__box-img">
-                            <img src="img/services-item-2.webp" alt="Ногтевой сервис" class="services__img">
-                            <span class="services__img-text">Ногтевой сервис</span>
-                        </div>
-                        <div class="services__info-price">от 500 р</div>
-                        <div class="services__info-text">Маникюр, педикюр, уходы, коррекция ногтей, покрытие,
-                            дизайн, снятие, удаление </div>
-                        <a class="services__info-btn btn" href="#">Подробнее</a>
+                    <div class="atmosphere__item swiper-slide">
+                        <img class="atmosphere__img" src="img/atmosphere-2.webp" alt="Интерьер">
                     </div>
-
-                    <div class="services__item">
-                        <div class="services__box-img">
-                            <img src="img/services-item-3.webp" alt="Косметология" class="services__img">
-                            <span class="services__img-text">Косметология</span>
-                        </div>
-                        <div class="services__info-price">от 800 р</div>
-                        <div class="services__info-text">Инъекционная косметология,
-                            аппаратная косметология, уходы,
-                            пиллинги, чистки, массаж </div>
-                        <a class="services__info-btn btn" href="#">Подробнее</a>
+                    <div class="atmosphere__item swiper-slide">
+                        <img class="atmosphere__img" src="img/atmosphere-3.webp" alt="Интерьер">
                     </div>
-
-                    <div class="services__item">
-                        <div class="services__box-img">
-                            <img src="img/services-item-4.webp" alt="Наращивание" class="services__img">
-                            <span class="services__img-text">Наращивание</span>
-                        </div>
-                        <div class="services__info-price">от 800 р</div>
-                        <div class="services__info-text">Окрашивание, коррекция бровей,
-                            снятие нарощенных ресниц </div>
-                        <a class="services__info-btn btn" href="#">Подробнее</a>
+                    <div class="atmosphere__item swiper-slide">
+                        <img class="atmosphere__img" src="img/atmosphere-1.webp" alt="Интерьер">
                     </div>
-
-                    <div class="services__item">
-                        <div class="services__box-img">
-                            <img src="img/services-item-5.webp" alt="Визаж" class="services__img">
-                            <span class="services__img-text">Визаж</span>
-                        </div>
-                        <div class="services__info-price">от 800 р</div>
-                        <div class="services__info-text">Окрашивание, коррекция бровей,
-                            снятие нарощенных ресниц </div>
-                        <a class="services__info-btn btn" href="#">Подробнее</a>
+                    <div class="atmosphere__item swiper-slide">
+                        <img class="atmosphere__img" src="img/atmosphere-2.webp" alt="Интерьер">
                     </div>
-
-                    <div class="services__item">
-                        <div class="services__box-img">
-                            <img src="img/services-item-6.webp" alt="Эпиляция" class="services__img">
-                            <span class="services__img-text">Эпиляция</span>
-                        </div>
-                        <div class="services__info-price">от 1000 р</div>
-                        <div class="services__info-text">Лицо, бикини, руки, ноги,
-                            торс </div>
-                        <a class="services__info-btn btn" href="#">Подробнее</a>
-                    </div>
-
-
                 </div>
             </div>
-        </section>
 
-    </main>
-    <footer class="footer"></footer>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+            <div class="swiper-navigation">
+                <div id="atmosphereSwiperNext" class="atmosphere__next"></div>
+                <div id="atmosphereSwiperPrev" class="atmosphere__prew"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+		
+	</main>
+	<footer class="footer"></footer>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>

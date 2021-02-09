@@ -1,0 +1,49 @@
+.atmosphere {
+    padding: 8rem 0;
+    background: url(../img/bg-atmosphere.webp) no-repeat;
+    background-size: cover;
+
+    /* .atmosphere__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 9rem;
+    }
+
+    /* .atmosphere__wrapper */
+
+    &__wrapper {
+        max-width: 108rem;
+        position: relative;
+    }
+    
+    /* .atmosphere__slider */
+    
+    &__slider {
+        z-index: 2;
+    }
+
+    /* .atmosphere__item */
+
+    &__item {
+        max-width: 52rem;
+        height: 36.5rem;
+        border-radius: 1.5rem;
+        overflow: hidden;
+    }
+
+    /* .atmosphere__img */
+
+    &__img {
+    }
+
+    /* .atmosphere__next */
+
+    &__next {
+    }
+
+    /* .atmosphere__prew */
+
+    &__prew {
+    }
+}
