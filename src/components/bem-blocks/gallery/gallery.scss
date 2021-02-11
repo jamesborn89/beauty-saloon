@@ -25,11 +25,11 @@
         border-radius: 1.8rem;
         overflow: hidden;
         filter: sepia(0);
-        transition: all 0.24s;
+        transition: all 0.5s;
 
         &:hover {
             filter: sepia(1);
-
+            transform: scale(1.1);
         }
     }
 
