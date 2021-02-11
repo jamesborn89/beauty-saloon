@@ -1,0 +1,121 @@
+.footer {
+    background-color: #f3f3f3;
+    padding: 6rem 0 4.6rem;
+
+    /* .footer__top */
+
+    &__top {
+        margin-bottom: 4.3rem;
+    }
+
+    /* .footer__logo */
+
+    &__logo {
+        color: $accent;
+        font-size: 3.6rem;
+    }
+
+    /* .footer__adress */
+
+    &__adress {
+        display: block;
+        padding-left: 3.3rem;
+        font-size: 1.4rem;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1.6rem;
+            height: 2.2rem;
+        }
+
+        &:hover,
+        &:focus-visible {
+            color: $accent;
+        }
+    }
+
+    /* .footer__nav */
+
+    &__nav {
+        font-size: 1.6rem;
+    }
+
+    /* .footer__nav-item */
+
+    &__nav-item {
+        &+& {
+            margin-left: 1.7rem;
+        }
+    }
+
+    /* .footer__nav-link */
+
+    &__nav-link {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 0.1rem;
+            width: 0;
+            background-color: $accent;
+            bottom: 0;
+            right: 0;
+            transition: all 0.24s;
+        }
+
+        &.active,
+        &:hover,
+        &:focus-visible {
+            color: $accent;
+        }
+
+        &:focus-visible {
+            &::before {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+
+    /* .footer__phone */
+
+    &__phone {
+        display: block;
+        position: relative;
+        padding-left: 3.2rem;
+        font-size: 2.4rem;
+
+        &:hover,
+        &:focus-visible {
+            color: $accent;
+        }
+
+        &:before {
+            position: absolute;
+            width: 2.1rem;
+            height: 2.1rem;
+            left: 0;
+            background-repeat: no-repeat;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    /* .footer__bottom-link */
+
+    &__bottom-link {
+        font-size: 1.6rem;
+        text-decoration: underline;
+        color: #c7c5c5;
+
+        &:hover,
+        &:focus-visible {
+            color: $accent;
+        }
+    }
+}

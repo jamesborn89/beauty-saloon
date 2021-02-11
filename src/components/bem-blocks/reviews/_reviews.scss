@@ -4,6 +4,12 @@
     padding-top: 6.5rem;
     padding-bottom: 9rem;
 
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    
     /* .reviews__title */
 
     &__title {
@@ -14,7 +20,52 @@
     /* .reviews__item */
 
     &__item {
-        max-width: 33rem;
-        height: 67rem;
+        width: 100%;
+        max-width: 31rem;
+        height: 63.2rem;
+        background-image: url(../img/phone_reviews.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 4.8rem 2.5rem;
     }
+
+    /* .reviews__item-inner */
+
+    &__item-inner {
+        max-height: 54.5rem;
+        padding: 0 1rem;
+        overflow: hidden;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    /* .reviews__item-text */
+
+    &__item-text {
+        min-height: 10.2rem;
+        max-width: 17.6rem;
+        background-color: #f7edd2;
+        border-radius: 1.8rem;
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin-bottom: 2.3rem;
+        position: relative;
+    }
+
+    /* .reviews__item-text--client */
+
+    &__item-text--client {
+        margin-left: auto;
+    }
+
+    &__item-img {
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        left: -4.9rem;
+        top: 0;
+
+    }
+
 }
