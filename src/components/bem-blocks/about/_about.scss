@@ -1,0 +1,42 @@
+.about-text {
+    padding: 4rem 0;
+    background-image: url(../img/bg-about.webp);
+
+    /* .about-text__wrapper--reverse */
+
+    &__wrapper--reverse {
+        flex-direction: row-reverse;
+    }
+
+    /* .about-text__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    /* .about-text__box-text */
+
+    &__box-text {
+        max-width: 62.6rem;
+
+    }
+
+    /* .about-text__text */
+
+    &__text {
+        line-height: 3rem;
+        margin-bottom: 3rem;
+        letter-spacing: 0.01em;
+    }
+
+    /* .about-text__box-img */
+
+    &__box-img {
+        width: 100%;
+        max-width: 51.6rem;
+        height: 37.7rem;
+        border-radius: 1.8rem;
+        overflow: hidden;
+    }
+}
