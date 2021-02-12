@@ -21,6 +21,7 @@
     /* .services__item */
 
     &__item {
+        width: 100%;
         max-width: 31.5rem;
         background-color: #fff;
         box-shadow: 0px 9px 11.18px 1.82px rgba(186, 185, 185, 0.23);
@@ -69,6 +70,7 @@
     /* .services__info-text */
 
     &__info-text {
+        width: 100%;
         font-size: 1.4rem;
         max-width: 20rem;
         margin: 0 auto;

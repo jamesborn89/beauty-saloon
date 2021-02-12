@@ -13,6 +13,7 @@
     /* .atmosphere__wrapper */
 
     &__wrapper {
+        width: 100%;
         max-width: 108rem;
         position: relative;
         margin: 0 auto;
@@ -33,6 +34,7 @@
     /* .atmosphere__min-slider */
 
     &__min-slider {
+        width: 100%;
         max-width: 68rem;
         z-index: 2;
     }
