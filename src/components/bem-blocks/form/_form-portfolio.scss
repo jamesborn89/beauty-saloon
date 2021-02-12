@@ -1,0 +1,60 @@
+.form-portfolio {
+    background-image: url(../img/bg-reviews.webp);
+    padding: 6rem 0;
+    background-size: 100% 100%;
+
+    /* .form-portfolio__title */
+
+    &__title {
+        max-width: 75rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    /* .form-portfolio__sub-title */
+
+    &__sub-title {
+        max-width: 31.2rem;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 3rem;
+        margin-bottom: 3rem;
+
+    }
+
+    /* .form-portfolio__form */
+
+    &__form {
+        flex-wrap: wrap;
+    }
+
+    /* .form-portfolio__input */
+
+    &__input {
+        width: 100%;
+        max-width: 34.6rem;
+        height: 10rem;
+        border: 0.1rem solid #c0bfbf;
+        border-radius: 1.8rem;
+        background-color: transparent;
+        padding: 4rem;
+        font-size: 2.4rem;
+
+        &::placeholder {
+            color: #c0bfbf;
+        }
+    }
+
+    /* .form-portfolio__btn */
+
+    &__btn {
+        max-width: 34.7rem;
+        height: 10rem;
+        margin: 0;
+    }
+
+    .form__lable {
+        margin: 3rem auto 0;
+    }
+}
