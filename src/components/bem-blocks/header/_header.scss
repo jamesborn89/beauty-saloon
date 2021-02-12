@@ -8,10 +8,6 @@
         height: 13.2rem;
     }
 
-    /* .header__box-logo */
-
-    &__box-logo {}
-
     /* .header__logo */
 
     &__logo {
@@ -24,10 +20,6 @@
     &__nav {
         font-size: 1.6rem;
     }
-
-    /* .header__nav-list */
-
-    &__nav-list {}
 
     /* .header__nav-item */
 
@@ -60,7 +52,7 @@
             color: $accent;
         }
 
-        &:focus-visible{
+        &:focus-visible {
             &::before {
                 width: 100%;
                 left: 0;

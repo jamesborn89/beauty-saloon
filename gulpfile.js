@@ -400,7 +400,7 @@ gulp.task('default',
 		'js',
 		'json',
 		'images',
-		'fonts',
+		// 'fonts',
 		'watch_html',
 		'server_html'
 	)

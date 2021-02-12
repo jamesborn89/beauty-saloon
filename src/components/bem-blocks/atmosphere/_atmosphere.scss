@@ -18,20 +18,20 @@
         margin: 0 auto;
 
         .swiper-navigation .atmosphere__next,
-         .swiper-navigation .atmosphere__prew {
-             top: 35%;
-         }
+        .swiper-navigation .atmosphere__prew {
+            top: 35%;
+        }
     }
-    
+
     /* .atmosphere__slider */
-    
+
     &__slider {
         z-index: 2;
         margin-bottom: 1.5rem;
     }
 
     /* .atmosphere__min-slider */
-    
+
     &__min-slider {
         max-width: 68rem;
         z-index: 2;
@@ -48,11 +48,11 @@
         border-radius: 1.5rem;
         border: 0.3rem solid transparent;
         transition: all 0.24s;
-        
+
         &:hover,
         &:focus-visible {
             border: 0.3rem solid $accent;
-    
+
             .atmosphere__img {
                 transform: scale(1.1);
             }

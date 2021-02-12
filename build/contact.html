@@ -37,15 +37,38 @@
 </header>
 	<main class="main">
 
-		<section class="form">
+		<section class="contact">
     <div class="container">
-        <h2 class="form__title title">Будьте красивыми вместе с нами</h2>
-        <p class="form__subtitle">Заполните форму заявки и запишитесь на любую процедуру 
-            в удобное для Вас время </p>
+        <h2 class="contact__title title gold">Контакты</h2>
+        <div class="contact__wrapper flex --just-space">
+            <div class="contact__box-info">
+                <p class="contact__info-text">Мы с удовольствием приглашаем Вас посетить наш салон красоты BONBINO,
+                    расположенную в престижном районе Москвы на улице Березинская</p>
+                <ul class="contact__info-list reset">
+                    <li class="contact__info-item"><a href="contact.html"
+                            class="contact__info-link --svg__map-before">г. Москва, ул. Березинская, 34</a></li>
+                    <li class="contact__info-item"><a href="tel:78765655487"
+                            class="contact__info-link --svg__icon-phone-before">+7 (876) 565-54-87</a></li>
+                    <li class="contact__info-item"><a href="mailto:bonbino@gmail.com"
+                            class="contact__info-link --svg__icon-mail-before">bonbino@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="contact__box-map">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A1800739d0c9620c90901c6cf22b10397fc1e7b22c03fedf0125c4e99681c2e26&amp;source=constructor"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="form-two">
+    <div class="container">
+        <h2 class="form-two__title title">Оставьте Ваше сообщение</h2>
+        <p class="form-two__subtitle">Заполните форму заявку и отправьте нам письмо</p>
 
-        <form class="form__box-form flex --just-center" action="#">
-            <input class="form__input-tel" type="tel" placeholder="+7 (_ _ _) _ _ _-_ _-_ _">
-            <button class="form__btn btn" type="submit">Записаться</button>
+        <form class="form-two__box-form flex --just-center" action="#">
+            <textarea class="form-two__area" placeholder="Напишите что-то"></textarea>
+            <input class="form-two__input-tel" type="email" placeholder="Ваш email">
+            <button class="form-two__btn btn" type="submit">Отправить</button>
             <label class="form__lable" for="check-form">
                 <input class="form__checkbox" type="checkbox" id="check-form" required>
                 <span class="form__checkbox-style"></span>
@@ -78,8 +101,8 @@
             </div>
         </div>
         <div class="footer__bottom flex --just-space">
-            <a class="footer__bottom-link" href="#">Все права защещины 2021</a>
-            <a class="footer__bottom-link" href="#">Пользовательскон соглашение</a>
+            <a class="footer__bottom-link" href="#">Все права защищены 2021</a>
+            <a class="footer__bottom-link" href="#">Пользовательское соглашени</a>
             <a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
         </div>
     </div>
