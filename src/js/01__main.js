@@ -76,3 +76,14 @@ if (document.querySelector('.swiper-container')) {
         atmosphereSwiper.slideNext();
     })
 }
+
+const boxes = document.querySelectorAll('.master-solon__wpapper .master-solon__item-card');
+const body = document.querySelector('body');
+
+boxes.forEach((box) => {
+    box.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.currentTarget.classList.toggle('active');
+        body.classList.toggle('oh');
+    });
+})

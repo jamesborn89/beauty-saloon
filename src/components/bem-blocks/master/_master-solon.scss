@@ -1,0 +1,149 @@
+.master-solon {
+    background-image: url(../img/bg-reviews.webp);
+    padding: 3.5rem 0;
+
+    /* .master-solon__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__item {
+        width: 100%;
+        max-width: 31.4rem;
+    }
+
+    /* .master-solon__item-card */
+
+    &__item-card {
+        width: 100%;
+        max-width: 31.4rem;
+        background-color: #ffffff;
+        box-shadow: 4px 8px 11px 2px rgba(186, 185, 185, 0.23);
+        border-radius: 1.8rem;
+        padding-bottom: 3.7rem;
+        cursor: pointer;
+        transition: all 0.5s;
+
+
+
+        &.active,
+        &.--big {
+            cursor: auto;
+            max-width: 91.4rem;
+            margin: 0 auto;
+
+            .master-solon__item-box-info {
+                display: block;
+            }
+        }
+
+        &.--big {
+            margin-bottom: 6rem;
+        }
+
+        &.active {
+            display: flex;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100vw;
+                height: 100vh;
+                z-index: -20;
+            }
+        }
+    }
+
+    /* .master-solon__item-box-img */
+
+    &__item-box-img {
+        width: 100%;
+        max-width: 31.6rem;
+        padding: 0 3.7rem;
+        text-align: center;
+    }
+
+    /* .master-solon__item-img-text */
+
+    &__item-img-text {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+
+
+    /* .master-solon__item-img */
+
+    &__item-img {
+        height: 24rem;
+        border-radius: 1.8rem;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+    }
+
+    /* .master-solon__item-img-title */
+
+    &__item-img-title {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        font-family: 'TrajanPro3';
+        font-weight: 400;
+    }
+
+    /* .master-solon__item-img-subtitle */
+
+    &__item-img-subtitle {
+        font-size: 1.6rem;
+    }
+
+    /* .master-solon__item-box-info */
+
+    &__item-box-info {
+        display: none;
+        width: 100%;
+        max-width: 43rem;
+        margin-top: 2.3rem;
+    }
+
+    /* .master-solon__item-info-title */
+
+    &__item-info-title {
+        font-family: 'TrajanPro3';
+        font-weight: 400;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    /* .master-solon__item-info-text */
+
+    &__item-info-text {
+        line-height: 2.4rem;
+    }
+
+    /* .master-solon__wpapper */
+
+    &__wpapper {
+        flex-wrap: wrap;
+        gap: 7rem 0;
+    }
+}
+
+// @keyframes open {
+//     10% {}
+//     50% {
+//         .master-solon__item-box-info {
+//             width: 100%;
+//             display: block;
+//         }
+//     }
+//     100% {}
+// }
