@@ -62,6 +62,14 @@ button {
     @include no-btn;
 }
 
+section {
+    background-image: url(../img/bg-section.webp);
+
+    &:last-child {
+        background-size: cover;
+    }
+}
+
 .container {
     max-width: 120rem;
     padding: 0 1.7rem;

@@ -1,5 +1,7 @@
 .home {
     margin-bottom: 10rem;
+    background-image: none;
+    
     /* .home__slider */
 
     &__slider {
@@ -106,7 +108,7 @@
     /* .home__item-two */
 
     &__item-two {
-        background-image: url(../img/bg-home-two.webp);
+        background-image: url(../img/bg-section.webp);
         background-repeat: no-repeat;
         background-size: cover;
         justify-content: space-between;
