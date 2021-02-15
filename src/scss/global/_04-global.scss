@@ -75,6 +75,19 @@ section {
     max-width: 120rem;
     padding: 0 1.7rem;
     margin: 0 auto;
+
+    @include media(1200px) {
+        max-width: 96rem;
+    }
+    @include media(960px) {
+        max-width: 76.8rem;
+    }
+    @include media(768px) {
+        max-width: 42.5em;
+    }
+    @include media(425px) {
+        max-width: 32rem;
+    }
 }
 
 a {

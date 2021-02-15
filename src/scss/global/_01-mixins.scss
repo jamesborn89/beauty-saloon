@@ -63,3 +63,9 @@
 	cursor: pointer;
 	-webkit-appearance: none;
 }
+
+@mixin media($max) {
+    @media (max-width: $max) {
+        @content;
+    }
+}
