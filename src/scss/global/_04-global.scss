@@ -64,6 +64,7 @@ button {
 
 section {
     background-image: url(../img/bg-section.webp);
+    background-size: 100% auto;
 
     &:last-child {
         background-size: cover;
