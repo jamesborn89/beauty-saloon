@@ -1,11 +1,20 @@
 .header {
     background-color: #f3f3f3;
+    position: relative;
+    z-index: 99;
 
 
     /* .header__wrapper */
 
     &__wrapper {
         height: 13.2rem;
+
+        @include media(960px) {
+            height: 10rem;
+        }
+        @include media(425px) {
+            height: 5rem;
+        }
     }
 
     /* .header__logo */
@@ -13,12 +22,79 @@
     &__logo {
         color: $accent;
         font-size: 3.6rem;
+        position: relative;
+        z-index: 99;
+
+        @include media(425px) {
+            font-size: 2.1rem;
+        }
     }
 
     /* .header__nav */
 
     &__nav {
         font-size: 1.6rem;
+
+        .header__box-phone {
+            display: none;
+        }
+
+        @include media(960px) {
+
+            .header__nav-list {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 100%;
+                transform: translateY(-100%);
+                transition: all 0.5s;
+                background-color: #f3f3f3;
+                min-height: 1rem;
+                height: 100vh;
+                z-index: 5;
+                overflow: auto;
+                flex-direction: column;
+                width: 100%;
+
+                .header__nav-item {
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .header__nav-link {
+                    padding: 2rem;
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            &.active {
+
+                .header__nav-list {
+                    padding-bottom: 15rem;
+                    bottom: 0;
+                    transform: translateY(100%);
+                }
+            }
+        }
+
+        @include media(768px) {
+            .header__box-phone {
+                display: block;
+                width: 100%;
+                text-align: center;
+
+                .header__phone {
+                    padding: 1rem 0;
+
+                    &::before {
+                        content: none;
+                    }
+                }
+
+            }
+        }
     }
 
     /* .header__nav-item */
@@ -26,6 +102,10 @@
     &__nav-item {
         &+& {
             margin-left: 5rem;
+
+            @include media(1200px) {
+                margin-left: 3rem;
+            }
         }
     }
 
@@ -58,12 +138,19 @@
                 left: 0;
             }
         }
+
     }
 
     /* .header__box-phone */
 
     &__box-phone {
         text-align: right;
+        position: relative;
+        z-index: 99;
+
+        @include media(768px) {
+            display: none;
+        }
     }
 
     /* .header__phone */
@@ -88,6 +175,10 @@
             top: 50%;
             transform: translateY(-50%);
         }
+
+        @include media(1200px) {
+            font-size: 2rem;
+        }
     }
 
     /* .header__schedule */
@@ -95,5 +186,70 @@
     &__schedule {
         color: $accent;
         font-size: 1.6rem;
+    }
+
+    /* .header__hamburger*/
+
+    &__hamburger {
+        display: none;
+        position: relative;
+        z-index: 99;
+
+        @include media(960px) {
+            width: 3rem;
+            height: 2rem;
+            display: block;
+            transition: all 0.3s;
+            position: relative;
+
+            span {
+                display: block;
+                position: absolute;
+                height: 0.2rem;
+                width: 100%;
+                background-color: #0e0e0e;
+                transition: all 0.3s;
+
+
+            }
+
+            span:first-child {
+                top: 0;
+
+            }
+
+            span:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            span:last-child {
+                bottom: 0;
+            }
+
+            &.active {
+                transform: rotate(360deg);
+
+                span {
+                    background-color: $accent;
+                }
+
+                span:first-child {
+                    top: 45%;
+                    transform: rotate(45deg);
+
+                }
+
+                span:last-child {
+                    transform: rotate(-45deg);
+                    bottom: 45%;
+
+                }
+
+                span:nth-child(2) {
+                    opacity: 0;
+                }
+            }
+        }
     }
 }

@@ -7,6 +7,10 @@
         width: 1rem;
         height: 1rem;
         margin: 0 1.5rem;
+
+        @include media(768px) {
+            margin: 0 .5rem;
+        }
     }
 
     & .swiper-pagination-bullets .swiper-pagination-bullet-active {

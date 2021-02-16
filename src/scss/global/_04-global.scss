@@ -53,6 +53,10 @@ h2 {
     padding-right: 1.7rem;
 }
 
+.lock{
+    overflow: hidden;
+}
+
 button:focus,
 input:focus {
     outline: transparent;
@@ -83,10 +87,11 @@ section {
         max-width: 76.8rem;
     }
     @include media(768px) {
-        max-width: 42.5em;
+        max-width: 42.5rem;
     }
     @include media(425px) {
         max-width: 32rem;
+        padding: 0 0.7rem;
     }
 }
 

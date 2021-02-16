@@ -25,6 +25,7 @@
         cursor: pointer;
         transition: all 0.5s;
 
+
         &.active,
         &.--big {
             cursor: auto;
@@ -133,14 +134,3 @@
         gap: 7rem 0;
     }
 }
-
-// @keyframes open {
-//     10% {}
-//     50% {
-//         .master-solon__item-box-info {
-//             width: 100%;
-//             display: block;
-//         }
-//     }
-//     100% {}
-// }

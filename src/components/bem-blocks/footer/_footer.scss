@@ -7,6 +7,11 @@
 
     &__top {
         margin-bottom: 4.3rem;
+        flex-wrap: wrap;
+
+        @include media(768px) {
+            margin-bottom: 2rem;
+        }
     }
 
     /* .footer__logo */
@@ -14,6 +19,10 @@
     &__logo {
         color: $accent;
         font-size: 3.6rem;
+
+        @include media(425px) {
+            font-size: 2rem;
+        }
     }
 
     /* .footer__adress */
@@ -43,6 +52,23 @@
 
     &__nav {
         font-size: 1.6rem;
+
+        @include media(1200px) {
+            width: 100%;
+        }
+    }
+
+    /* .footer__nav-list */
+
+    &__nav-list {
+        @include media(1200px) {
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        @include media(768px) {
+            flex-direction: column;
+        }
     }
 
     /* .footer__nav-item */
@@ -50,6 +76,19 @@
     &__nav-item {
         &+& {
             margin-left: 1.7rem;
+
+            @include media(768px) {
+                margin: 0;
+            }
+        }
+
+        @include media(960px) {
+            padding: 1rem;
+        }
+
+        @include media(768px) {
+            width: 100%;
+            text-align: center;
         }
     }
 
@@ -83,6 +122,14 @@
         }
     }
 
+    /* .footer__box-phone */
+
+    &__box-phone {
+        @include media(1200px) {
+            margin: 0 auto;
+        }
+    }
+
     /* .footer__phone */
 
     &__phone {
@@ -105,6 +152,19 @@
             top: 50%;
             transform: translateY(-50%);
         }
+
+        @include media(1200px) {
+            font-size: 2rem;
+        }
+    }
+
+    /* .footer__bottom */
+
+    &__bottom {
+        @include media(768px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     /* .footer__bottom-link */
@@ -117,6 +177,10 @@
         &:hover,
         &:focus-visible {
             color: $accent;
+        }
+
+        @include media(768px) {
+            padding: 1rem;
         }
     }
 }
