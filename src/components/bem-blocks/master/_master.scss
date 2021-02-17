@@ -2,11 +2,22 @@
     padding-top: 12.5rem;
     padding-bottom: 7rem;
 
+    @include media(768px) {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
     &__wrapper {
         width: 100%;
         position: relative;
         max-width: 101.7rem;
         margin: 0 auto;
+
+        .swiper-navigation {
+            @include media(1050px) {
+                display: none;
+            }
+        }
     }
 
     /* .master__title */
@@ -28,6 +39,19 @@
 
         .swiper-pagination-bullets .swiper-pagination-bullet {
             margin: 0 0.5rem;
+        }
+
+        @include media(960px) {
+            max-width: 65.8rem;
+        }
+        @include media(768px) {
+            max-width: 35.4rem;
+            padding: 0 2rem 5rem;
+        }
+        @include media(425px) {
+            max-width: 35.4rem;
+            padding: 0;
+            padding-bottom: 5rem;
         }
     }
 

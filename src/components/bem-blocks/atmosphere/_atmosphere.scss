@@ -1,11 +1,19 @@
 .atmosphere {
     padding: 8rem 0;
 
+    @include media(768px) {
+        padding: 4rem 0;
+    }
+
     /* .atmosphere__title */
 
     &__title {
         text-align: center;
         margin-bottom: 9rem;
+
+        @include media(960px) {
+            margin-bottom: 5rem;
+        }
     }
 
     /* .atmosphere__wrapper */
@@ -20,6 +28,12 @@
         .swiper-navigation .atmosphere__prew {
             top: 35%;
         }
+
+        .swiper-navigation {
+            @include media(1050px) {
+                display: none;
+            }
+        }
     }
 
     /* .atmosphere__slider */
@@ -27,6 +41,14 @@
     &__slider {
         z-index: 2;
         margin-bottom: 1.5rem;
+
+        @include media(960px) {
+            max-width: 52.2rem;
+        }
+
+        @include media(425px) {
+            margin-bottom: .5rem;
+        }
     }
 
     /* .atmosphere__min-slider */
@@ -45,7 +67,6 @@
         height: 36.5rem;
         display: block;
         overflow: hidden;
-        border-radius: 1.5rem;
         border: 0.3rem solid transparent;
         transition: all 0.24s;
 
@@ -57,6 +78,10 @@
                 transform: scale(1.1);
             }
         }
+
+        @include media(768px) {
+            height: 21.8rem;
+         }
     }
 
     /* .atmosphere__min-item */
@@ -65,9 +90,21 @@
         width: 100%;
         max-width: 14rem;
         height: 9rem;
-        border-radius: 1.5rem;
         overflow: hidden;
         cursor: pointer;
+
+        @include media(768px) {
+            height: 6rem;
+         }
+    }
+
+    &__modal,
+    &__min-item {
+        border-radius: 1.5rem;
+
+        @include media(768px) {
+            border-radius: 1rem;
+         }
     }
 
     /* .atmosphere__img */
