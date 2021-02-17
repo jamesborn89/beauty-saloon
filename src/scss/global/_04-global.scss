@@ -68,11 +68,15 @@ button {
 
 section {
     background-image: url(../img/bg-section.webp);
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-position: center;
 
     &:last-child {
         background-size: cover;
+    }
+
+    @include media(768px) {
+        background-image: url(../img/bg-min-section.webp);
     }
 }
 

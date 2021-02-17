@@ -1,11 +1,19 @@
 .form {
     padding: 6.5rem 0;
 
+    @include media(768px) {
+        padding: 3rem 0;
+    }
+
     /* .form__title */
 
     &__title {
         text-align: center;
         margin-bottom: 3.5rem;
+
+        @include media(768px) {
+            margin-bottom: 2rem;
+        }
     }
 
     /* .form__subtitle */
@@ -14,6 +22,11 @@
         text-align: center;
         max-width: 49rem;
         margin: 0 auto 7.5rem;
+
+        @include media(768px) {
+            margin-bottom: 4rem;
+            font-size: 1.6rem;
+        }
     }
 
     /* .form__box-form */
@@ -24,28 +37,52 @@
         margin: 0 auto;
     }
 
-    /* .form__input-tel */
-
-    &__input-tel {
-        width: 100%;
-        max-width: 35rem;
-        height: 10rem;
-        text-align: center;
-        margin: 0 1.5rem;
-        background-color: transparent;
-        border: 0.1rem solid rgb(192, 191, 191);
-        border-radius: 1.8rem;
-        font-size: 2.4rem;
-        padding: 1rem;
-    }
-
-    /* .form__btn */
-
+    &__input-tel,
     &__btn {
         width: 100%;
         max-width: 35rem;
         height: 10rem;
         margin: 0 1.5rem;
+
+        @include media(1200px) {
+            max-width: 30rem;
+        }
+
+        @include media(960px) {
+            max-width: 25rem;
+            height: 8rem;
+        }
+
+        @include media(768px) {
+            max-width: 21.9rem;
+            height: 5.8rem;
+        }
+    }
+
+    /* .form__input-tel */
+
+    &__input-tel {
+        background-color: transparent;
+        border: 0.1rem solid rgb(192, 191, 191);
+        border-radius: 1.8rem;
+        font-size: 2.4rem;
+        padding: 3rem;
+
+        @include media(960px) {
+            font-size: 2rem;
+            padding: 2rem;
+        }
+
+        @include media(768px) {
+            font-size: 1.6rem;
+            padding: 2rem 4rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    /* .form__btn */
+
+    &__btn {
         transition: all 0.24s;
     }
 
@@ -89,6 +126,10 @@
         margin-top: 4rem;
         font-size: 1.1rem;
         padding-left: 2.3rem;
+
+        @include media(768px) {
+            margin-top: 2rem;
+        }
     }
 
     /* .form__lable-link */

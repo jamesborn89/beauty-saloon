@@ -2,6 +2,10 @@
     padding-top: 6.5rem;
     padding-bottom: 9rem;
 
+    @include media(768px) {
+        padding: 5rem 0;
+    }
+
 
     ::-webkit-scrollbar {
         display: none;
@@ -13,6 +17,29 @@
     &__title {
         text-align: center;
         margin-bottom: 6.5rem;
+
+        @include media(768px) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    /* .reviews__wrapper */
+
+    &__wrapper {
+
+        &--desc {
+            @include media(1200px) {
+                display: none;
+            }
+        }
+
+        &--plan {
+            display: none;
+            @include media(1200px) {
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 
     /* .reviews__item */
@@ -35,6 +62,10 @@
         overflow: hidden;
         overflow-y: auto;
         scrollbar-width: none;
+
+        @include media(425px) {
+            max-height: 53.5rem;
+        }
     }
 
     /* .reviews__item-text */
