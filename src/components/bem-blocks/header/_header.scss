@@ -12,6 +12,7 @@
         @include media(960px) {
             height: 10rem;
         }
+
         @include media(425px) {
             height: 5rem;
         }
@@ -100,11 +101,23 @@
     /* .header__nav-item */
 
     &__nav-item {
+        position: relative;
+
         &+& {
             margin-left: 5rem;
 
             @include media(1200px) {
                 margin-left: 3rem;
+            }
+        }
+
+        &:hover,
+        &:focus-within {
+
+            .header__drop-dawn {
+                display: block;   
+                padding: 1rem;
+                height: auto;
             }
         }
     }
@@ -126,6 +139,10 @@
             transition: all 0.24s;
         }
 
+        &.active {
+            pointer-events: none;
+        }
+
         &.active,
         &:hover,
         &:focus-visible {
@@ -139,6 +156,44 @@
             }
         }
 
+    }
+
+    /* .header__drop-dawn */
+
+    &__drop-dawn {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 100%);
+        background-color: #ededed;
+        border-radius: 1.8rem;
+        height: 0;
+        padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+        transition: height 0.5s, padding 0.2s;
+
+        @include media(960px) {
+            position: relative;
+            height: auto;
+            transform: none;
+            left: 0;
+            padding: 1rem;
+        }
+    }
+
+    /* .header__drop-link */
+
+    &__drop-link {
+        display: block;
+        padding: 0.5rem 1rem;
+
+        &:hover,
+        &:focus-visible {
+            color: $accent;
+            text-decoration: underline;
+        }
     }
 
     /* .header__box-phone */
