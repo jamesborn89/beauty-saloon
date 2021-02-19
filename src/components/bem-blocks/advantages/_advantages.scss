@@ -1,0 +1,38 @@
+.advantages {
+    padding: 4rem 0;
+
+    /* .advantages__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    /* .advantages__list */
+
+    &__list {
+        max-width: 87.5rem;
+        margin: 0 auto;
+    }
+
+    /* .advantages__item */
+
+    &__item {
+        margin-bottom: 5rem;
+        padding-left: 5rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3.5rem;
+            height: 3.5rem;
+            background-image: url(../img/ok.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}

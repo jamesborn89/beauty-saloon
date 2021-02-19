@@ -1,0 +1,130 @@
+.varieties {
+    padding: 3rem 0;
+    background-size: contain;
+
+    /* .varieties__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    /* .varieties__item */
+
+    &__item {
+        margin-bottom: 5rem;
+    }
+
+    /* .varieties__item-info */
+
+    &__item-info {
+        width: 100%;
+        max-width: 67.5rem;
+    }
+
+    /* .varieties__item-tilte */
+
+    &__item-tilte {
+        font-family: 'TrajanPro3';
+        font-weight: 400;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+
+        span {
+            font-weight: 700;
+            color: #2a2a2a;
+        }
+    }
+
+    /* .varieties__item-text */
+
+    &__item-text {
+        margin-bottom: 3.5rem;
+        line-height: 30px;
+    }
+
+    /* .varieties__item-btn */
+
+    &__item-btn {
+        max-width: 24rem;
+        height: 7rem;
+    }
+
+    /* .varieties__item-slider */
+
+    &__item-slider {
+        max-width: 48rem;
+        padding: 0 5rem;
+
+        & .swiper-navigation {
+
+            .atmosphere__prew {
+                transform: translateX(5%);
+                z-index: -1;
+            }
+
+            .atmosphere__next {
+                transform: translateX(-5%);
+                z-index: -1;
+            }
+
+            .atmosphere__prew:hover {
+                transform: translateX(0%);
+            }
+
+            .atmosphere__next:hover {
+                transform: translateX(0%);
+            }
+        }
+    }
+
+    /* .varieties__item-wrapper */
+
+    &__item-wrapper {}
+
+    /* .varieties__slide-item */
+
+    &__slide-item {
+        width: 100%;
+        max-width: 38rem;
+        height: 23rem;
+        border-radius: 1.8rem;
+        overflow: hidden;
+    }
+
+    &__text {
+        max-width: 75rem;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+.container {}
+
+.title {}
+
+.gold {}
+
+.flex {}
+
+.btn {}
+
+.swiper-container {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-navigation {}
+
+.atmosphere {
+
+    /* .atmosphere__next */
+
+    &__next {}
+
+    /* .atmosphere__prew */
+
+    &__prew {}
+}
