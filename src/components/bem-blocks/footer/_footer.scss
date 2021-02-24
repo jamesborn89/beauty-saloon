@@ -56,6 +56,30 @@
         @include media(1200px) {
             width: 100%;
         }
+
+        @include media(768px) {
+            width: auto;
+        }
+
+        &--drop {
+            width: 100%;
+            margin-top: 1rem;
+
+            @include media(1200px){
+                order: 3;
+            }
+
+            @include media(960px){
+                margin: 0;
+                .footer__nav-item + .footer__nav-item{
+                    margin: 0;
+                }
+            }
+
+            @include media(768px) {
+                width: auto;
+            }
+        }
     }
 
     /* .footer__nav-list */
@@ -68,6 +92,10 @@
 
         @include media(768px) {
             flex-direction: column;
+        }
+
+        &--drop {
+            justify-content: space-around;
         }
     }
 
@@ -126,7 +154,8 @@
 
     &__box-phone {
         @include media(1200px) {
-            margin: 0 auto;
+            margin: 1rem auto 0;
+            order: 4;
         }
     }
 

@@ -9,10 +9,72 @@
         margin-bottom: 6rem;
     }
 
+    /* .varieties__wrapper */
+
+    &__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+    }
+
     /* .varieties__item */
 
     &__item {
         margin-bottom: 5rem;
+
+        &--home {
+            flex-wrap: wrap;
+            max-width: 50rem;
+            justify-content: center;
+
+            .varieties__item-tilte {
+                span {
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            .varieties__item-slider {
+                margin-bottom: 2rem;
+            }
+
+            .varieties__box-btn {
+                width: 100%;
+            }
+
+            .varieties__item-btn {
+                max-width: 20rem;
+                height: 5rem;
+            }
+
+            .varieties__slide-item {
+                position: relative;
+                transition: all 0.3s;
+
+                &::before {
+                    content: 'Подробнее';
+                    position: absolute;
+                    font-size: 2.4rem;
+                    color: $accent;
+                    width: 100%;
+                    height: 100%;
+                    backdrop-filter: blur(0.5rem);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-shadow: 1px 1px 2px black;
+                    transition: all 0.3s;
+                }
+
+                &:hover,
+                &:focus-within {
+                    transform: scale(1.05);
+                    &::before {
+                        backdrop-filter: blur(0);
+                    }
+                }
+            }
+        }
     }
 
     /* .varieties__item-info */
@@ -85,6 +147,7 @@
     /* .varieties__slide-item */
 
     &__slide-item {
+        display: block;
         width: 100%;
         max-width: 38rem;
         height: 23rem;
@@ -98,33 +161,4 @@
         text-align: center;
         line-height: 30px;
     }
-}
-
-.container {}
-
-.title {}
-
-.gold {}
-
-.flex {}
-
-.btn {}
-
-.swiper-container {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
-.swiper-navigation {}
-
-.atmosphere {
-
-    /* .atmosphere__next */
-
-    &__next {}
-
-    /* .atmosphere__prew */
-
-    &__prew {}
 }
