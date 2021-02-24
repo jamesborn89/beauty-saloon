@@ -6,6 +6,10 @@
     &__title {
         text-align: center;
         margin-bottom: 5rem;
+
+        @include media(768px) {
+            margin-bottom: 2rem;
+        }
     }
 
     /* .advantages__list */
@@ -33,6 +37,10 @@
             background-image: url(../img/ok.webp);
             background-repeat: no-repeat;
             background-size: contain;
+        }
+
+        @include media(768px) {
+            margin-bottom: 2rem;
         }
     }
 }

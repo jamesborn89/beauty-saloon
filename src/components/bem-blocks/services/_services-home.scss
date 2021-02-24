@@ -3,6 +3,10 @@
     position: relative;
     padding: 3rem 0 15.4rem;
 
+    @include media(960px) {
+        padding-bottom: 2rem;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -17,16 +21,28 @@
     &__title {
         text-align: center;
         margin-bottom: 5.5rem;
+
+        @include media(425px) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     /* .services-home__container */
 
     &__container {
         padding-bottom: 8rem;
-        
+
         .swiper-slide.swiper-slide-next,
         .swiper-slide.swiper-slide-prev {
             opacity: 0 !important;
+        }
+
+        @include media(768px) {
+            padding-bottom: 2rem;
+        }
+
+        @include media(768px) {
+            padding-bottom: 5rem;
         }
     }
 
@@ -34,6 +50,11 @@
 
     &__item {
         justify-content: center;
+
+        @include media(960px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     /* .services-home__item-img */
@@ -46,6 +67,17 @@
         overflow: hidden;
         margin-right: 7.7rem;
         position: relative;
+
+        @include media(960px) {
+            margin: 0 auto 2rem;
+        }
+
+        @include media(960px) {
+            height: 30rem;
+        }
+        @include media(425px) {
+            height: 22rem;
+        }
     }
 
     /* .services-home__item-procent */
@@ -63,6 +95,14 @@
         align-items: center;
         font-size: 6.3rem;
         color: #d12c2c;
+
+        @include media(768px) {
+            width: 7rem;
+            height: 7rem;
+            font-size: 3rem;
+            bottom: 2.5rem;
+            right: 2.5rem;
+        }
     }
 
     /* .services-home__item-info */
@@ -85,14 +125,35 @@
         span {
             color: #d12c2c;
         }
+
+        @include media(960px) {
+            margin-bottom: 4rem;
+        }
+
+        @include media(425px) {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
     }
-
+    
     /* .services-home__item-btn */
-
+    
     &__item-btn {
         margin-top: auto;
         margin-left: 0;
         max-width: 34.6rem;
         height: 10rem;
+        
+        @include media(768px) {
+            max-width: 30rem;
+            height: 8.5rem;
+            margin: 0 auto;
+        }
+
+        @include media(425px) {
+            max-width: 25rem;
+            height: 6rem;
+        }
+
     }
 }

@@ -27,6 +27,13 @@
 
     &__form {
         flex-wrap: wrap;
+
+        @include media(960px) {
+            max-width: 30rem;
+            margin: 0 auto;
+            gap: 2rem;
+            justify-content: center;
+        }
     }
 
     /* .form-portfolio__input */
@@ -55,7 +62,17 @@
         margin: 0;
     }
 
+    &__btn,
+    &__input {
+        max-width: 30rem;
+        height: 8.5rem;
+    }
+
     .form__lable {
         margin: 3rem auto 0;
+
+        @include media(960px) {
+            margin: 0;
+        }
     }
 }

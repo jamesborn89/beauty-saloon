@@ -8,6 +8,23 @@
         margin-bottom: 3rem;
     }
 
+
+    /* .master-solon__wpapper */
+
+    &__wpapper {
+        flex-wrap: wrap;
+        gap: 7rem 0;
+
+        @include media(1200px) {
+            justify-content: center;
+            gap: 7rem;
+        }
+
+        @include media(768px) {
+            gap: 4rem;
+        }
+    }
+
     &__item {
         width: 100%;
         max-width: 31.4rem;
@@ -26,6 +43,17 @@
         transition: all 0.5s;
 
 
+        @include media(768px) {
+            padding: 2rem;
+            padding-top: 0;
+        }
+
+        @include media(425px) {
+            padding: 1rem;
+            padding-top: 0;
+        }
+
+
         &.active,
         &.--big {
             cursor: auto;
@@ -34,6 +62,12 @@
 
             .master-solon__item-box-info {
                 display: block;
+            }
+
+            @include media(768px) {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
             }
         }
 
@@ -46,7 +80,7 @@
             position: fixed;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateY(-50%) translateX(-50%);
             z-index: 5;
 
             &::before {
@@ -69,6 +103,11 @@
         max-width: 31.6rem;
         padding: 0 3.7rem;
         text-align: center;
+
+        @include media(768px) {
+            padding: 0;
+            margin: 0 auto;
+        }
     }
 
     /* .master-solon__item-img-text */
@@ -110,6 +149,16 @@
         width: 100%;
         max-width: 43rem;
         margin-top: 2.3rem;
+        margin-right: 2.3rem;
+
+        @include media(768px) {
+            padding: 2rem;
+            margin: 0;
+        }
+
+        @include media(425px) {
+            padding: 1rem;
+        }
     }
 
     /* .master-solon__item-info-title */
@@ -119,18 +168,22 @@
         font-weight: 400;
         line-height: 3rem;
         margin-bottom: 2rem;
+
+        @include media(768px) {
+            line-height: 2rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
     }
 
     /* .master-solon__item-info-text */
 
     &__item-info-text {
         line-height: 2.4rem;
-    }
 
-    /* .master-solon__wpapper */
-
-    &__wpapper {
-        flex-wrap: wrap;
-        gap: 7rem 0;
+        @include media(768px) {
+            line-height: 2rem;
+            font-size: 1.6rem;
+        }
     }
 }

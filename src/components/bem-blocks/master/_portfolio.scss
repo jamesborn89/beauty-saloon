@@ -6,6 +6,10 @@
     &__title {
         text-align: center;
         margin-bottom: 3rem;
+
+        @include media(425px) {
+            margin-bottom: 1rem;
+        }
     }
 
     /* .portfolio__text */
@@ -15,6 +19,10 @@
         line-height: 3rem;
         max-width: 59rem;
         margin: 0 auto 5rem;
+
+        @include media(425px) {
+            margin-bottom: 1rem;
+        }
     }
 
     /* .portfolio__wrapper */
@@ -23,6 +31,11 @@
         flex-wrap: wrap;
         gap: 1.5rem 0;
         margin-bottom: 4.5rem;
+
+        @include media(1200px) {
+            justify-content: center;
+            gap: 2rem;
+        }
     }
 
     /* .portfolio__item */
@@ -50,18 +63,31 @@
         &:hover {
             filter: sepia(0.7);
         }
+
+        @include media(425px) {
+            height: 25rem;
+            margin-bottom: 1rem;
+        }
     }
 
     /* .portfolio__name */
 
     &__name {
         margin-bottom: 2rem;
+
+        @include media(425px) {
+            margin-bottom: 1rem;
+        }
     }
 
     /* .portfolio__work */
 
     &__work {
         margin-bottom: 2rem;
+        
+        @include media(425px) {
+            margin-bottom: 1rem;
+        }
     }
 
     /* .portfolio__btn */

@@ -22,6 +22,10 @@
         flex-wrap: wrap;
         max-width: 73rem;
         margin: 0 auto;
+
+        @include media(768px) {
+            gap: 2rem;
+        }
     }
 
     &__area,
@@ -41,35 +45,54 @@
         height: 14rem;
         margin-bottom: 5rem;
         resize: none;
+
+        @include media(768px) {
+            height: 10rem;
+        }
     }
 
     /* .form-two__input-tel */
 
     &__input-tel {
-        width: 100%;
-        max-width: 32.5rem;
-        height: 10rem;
     }
 
     /* .form-two__btn */
 
     &__btn {
+        margin: 0;
+    }
+    
+    &__btn,
+    &__input-tel {
         width: 100%;
         max-width: 32.5rem;
         height: 10rem;
-        margin: 0;
-    }
-
-    &__btn,
-    &__input-tel {
         margin: 0 2rem;
 
         &::placeholder {
             color: #c0bfbf;
         }
+
+        @include media(768px) {
+            height: 7rem;
+        }
     }
 
     .form__lable {
         margin-top: 8rem;
+
+        @include media(768px) {
+           margin: 0;
+        }
+    }
+
+    &__btn,
+    &__input-tel,
+    &__area {
+
+        @include media(768px) {
+            max-width: 100%;
+            margin: 0 auto;
+        }
     }
 }

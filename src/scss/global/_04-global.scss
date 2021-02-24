@@ -21,6 +21,7 @@ body {
     color: $black;
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 img {
@@ -51,6 +52,10 @@ h2 {
 .oh {
     overflow: hidden;
     padding-right: 1.7rem;
+
+    @include media(960px) {
+        padding-right: 0;
+    }
 }
 
 .db {
@@ -113,6 +118,10 @@ a {
 
 .fslightbox-open {
     padding-right: 1.7rem;
+
+    @include media(960px) {
+        padding-right: 0;
+    }
 }
 
 .gold {

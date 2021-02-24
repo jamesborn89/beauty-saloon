@@ -67,10 +67,16 @@ var homeSwiper = new Swiper('.services-home__container.swiper-container', {
 var varietiesSwiper = new Swiper('.varieties__item-slider.swiper-container', {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 50,
+    spaceBetween: 40,
     navigation: {
         nextEl: '.atmosphere__next',
         prevEl: '.atmosphere__prew',
+    },
+    breakpoints: {
+        425: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+        }
     },
 });
 
