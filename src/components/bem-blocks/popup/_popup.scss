@@ -1,0 +1,103 @@
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    backdrop-filter: blur(1rem);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    
+    &__wrapper {
+        position: absolute;
+        background-color: #fff;
+        background-image: none;
+        width: 100%;
+        max-width: 60rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 7rem 4rem;
+        border-radius: 1.8rem;
+        box-shadow: 0px 9px 11.18px 1.82px rgba(186, 185, 185, 0.23);
+    }
+
+    &.open {
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0s;
+      }
+
+    .form__subtitle {
+        margin-bottom: 2.5rem;
+    }
+
+    .form-portfolio__form {
+        max-width: 30rem;
+        margin: 0 auto;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .form-portfolio__btn,
+    .form-portfolio__input {
+        max-width: 30rem;
+        height: 8.5rem;
+    }
+
+    .form__lable {
+        margin-top: 1rem;
+    }
+
+    .closed {
+        position: absolute;
+        width: 2.7rem;
+        height: 2.7rem;
+        right: 2rem;
+        top: 2rem;
+        cursor: pointer;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0.2rem;
+            background-color: $accent;
+            top: 50%;
+            right: 0;
+        }
+
+        &::after {
+            transform: rotate(45deg);
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    /* .popup-two__text */
+
+    &__text {
+        text-align: center;
+        margin-bottom: 5.5rem;
+    }
+
+    /* .popup-two__box-img */
+
+    &__box-img {
+        width: 100%;
+        max-width: 44.5rem;
+        height: 26.5rem;
+        margin: 0 auto;
+        border-radius: 1.8rem;
+        overflow: hidden;
+        opacity: 0.7;
+    }
+}

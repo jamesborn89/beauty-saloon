@@ -71,7 +71,7 @@
                                 САЛОН <span class="gold">КРАСОТЫ</span> ПРЕМИУМ КЛАССА
                             </h1>
                             <p class="home__subtitle">Неповторимая атмосфера салона с лучшими мастерами позволяет получить наслождение от процедур</p>
-                            <a href="#" class="home__btn btn">Записаться онлайн</a>
+                            <a href="#" class="home__btn btn" data-modal="modal-one">Записаться онлайн</a>
                         </div>
                         <div class="home__box-img">
                             <img src="img/home-women.webp" alt="Девушка">
@@ -86,7 +86,7 @@
                         <div class="home__box-info">
                             <h2 class="home__title-two">Скидка <span class="gold">-30%</span> на макияж</h2>
                             <span class="home__procent">%</span>
-                            <a href="#" class="home__btn btn">Записаться</a>
+                            <a href="#" class="home__btn btn" data-modal="modal-one">Записаться</a>
                         </div>
                         <div class="home__box-img">
                             <img src="img/home-women-two.webp" alt="Девушка">
@@ -603,6 +603,42 @@
 </section>
 		
 	</main>
+	<section class="popup modal-exit" id="modal-one">
+    <div class="popup__wrapper">
+        <button class="closed modal-exit"></button>
+        <h2 class="form__title title">Будьте красивыми вместе с нами</h2>
+        <p class="form__subtitle">Заполните форму заявки и запишитесь на любую процедуру
+            в удобное для Вас время </p>
+
+        <form action="#" class="form-portfolio__form flex --just-space">
+
+            <input class="form-portfolio__input" type="text" placeholder="Ваше имя">
+
+            <input class="form-portfolio__input" type="tel" placeholder="+7 (_ _ _) _ _ _-_ _-_ _">
+
+            <button class="form-portfolio__btn btn modal-exit" data-modal="modal-two" type="submit">Записаться</button>
+
+            <label class="form__lable" for="check-form-popup">
+
+                <input class="form__checkbox" type="checkbox" id="check-form-popup" required>
+                <span class="form__checkbox-style"></span>
+                Я принимаю условия
+                <a class="form__lable-link" href="#">передачи информации</a>
+
+            </label>
+        </form>
+    </div>
+</section>
+	<section class="popup popup--two" id="modal-two">
+    <div class="popup__wrapper modal-exit">
+        <button class="closed modal-exit'"></button>
+        <h2 class="popup__title title">Заявка отправлена</h2>
+        <p class="popup__text">Спасибо за выбор нашего салона! Менеджер свяжется с Вами в ближ</p>
+        <div class="popup__box-img">
+            <img src="img/portfolio-item-2.webp" alt="Заявка отправлена">
+        </div>
+    </div>
+</section>
 	<footer class="footer">
     <div class="container">
         <div class="footer__top flex --just-space --align-center">
