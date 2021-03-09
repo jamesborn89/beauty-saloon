@@ -13,20 +13,30 @@
         }
     }
 
+    /* .questions__accord */
+
+    &__accord {
+        flex-direction: column;
+    }
+
     /* .questions__wrapper */
 
     &__wrapper {
-        flex-wrap: wrap;
-        gap: 3.3rem 0;
+        width: 100%;
+        max-width: 53.6rem;
+
+        @include media(1200px) {
+            max-width: 100%;
+        }
     }
 
     /* .questions__item */
 
     &__item {
-        width: 100%;
-        max-width: 53.6rem;
+        display: flex;
         transition: 0.3s;
         height: auto;
+        margin-bottom: 3rem;
 
         &[open] {
             .questions__item-title::after {
