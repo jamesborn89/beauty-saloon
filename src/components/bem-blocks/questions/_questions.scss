@@ -16,7 +16,10 @@
     /* .questions__accord */
 
     &__accord {
-        flex-direction: column;
+
+        @include media(1200px) {
+            flex-direction: column;
+        }
     }
 
     /* .questions__wrapper */
